@@ -1,0 +1,58 @@
+*:where(:not(html, iframe, canvas, img, svg, video, dialog):not(svg *, symbol
+      *)) {
+  all: unset;
+  display: revert;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 16px;
+  color: #fff;
+}
+.card {
+  --font-size-btn: 1rem;
+  --padding-btn: 1rem;
+  --border-width-btn: 0.25rem;
+
+  --font-size-card-title: 3rem;
+  --margin-bottom-card-title: 2rem;
+  --padding-card: 3rem;
+  --border-width-card: 0.25rem;
+
+  padding: var(--padding-card);
+  border: var(--border-width-card) solid aqua;
+  background-color: darkslateblue;
+
+  &__title {
+    font-size: var(--font-size-card-title);
+    margin-bottom: var(--margin-bottom-card-title);
+    outline: 1px solid;
+    outline-offset: -1px;
+  }
+
+  &--px {
+    --padding-card: 48px;
+    --margin-bottom-card-title: 32px;
+    --padding-btn: 16px;
+    --border-width-btn: 4px;
+  }
+  &--min-px-rem {
+    --padding-card: min(48px, 3rem);
+    --margin-bottom-card-title: min(32px, 2rem);
+    --padding-btn: min(16px, 1rem);
+    --border-width-btn: min(4px, 0.25rem);
+  }
+}
+
+.btn {
+  font-size: var(--font-size-btn);
+  padding: var(--padding-btn);
+  border: var(--border-width-btn) solid tomato;
+  background-color: purple;
+}

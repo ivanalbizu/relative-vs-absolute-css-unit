@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rem VS px</title>
+    <link rel="stylesheet" href="src/css/style.scss" />
+  </head>
+  <body>
+    <article class="card">
+      <h2 class="card__title">margin / padding / border: REM</h2>
+      <button class="btn" type="button">REM simple button</button>
+    </article>
+    <article class="card card--px">
+      <h2 class="card__title">margin / padding / border: PX</h2>
+      <button class="btn" type="button">PX simple button</button>
+    </article>
+    <article class="card card--min-px-rem">
+      <h2 class="card__title">margin / padding / border: min(px, rem)</h2>
+      <button class="btn" type="button">min(px, rem) simple button</button>
+    </article>
+  </body>
+</html>
