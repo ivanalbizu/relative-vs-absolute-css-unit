@@ -2,7 +2,7 @@ Llevo tiempo usando la unidad de medida REM. Con el paso del tiempo me voy dando
 
 El usuario de la web puede tener configurado en su dispositivo un aumento (o disminución) del tamaño de la tipografía
 
-No estableciendo la unidad de medida para tipografías en valores fijos (px, pt, cm...) le permiteremos al usuario que pueda personalizar el tamaño de la fuente. Yo particularmente prefiero usar REM frente a EM ya que con REM el valor relativo de partida siempre será la raiz (<html>), con EM será el elemento padre (en cascada) que tenga definida el tamaño de tipografía pudiéndose obtener valores relativos no esperados
+No estableciendo la unidad de medida para tipografías en valores fijos (px, pt, cm...) le permiteremos al usuario que pueda personalizar el tamaño de la fuente. Yo particularmente prefiero usar REM frente a EM ya que con REM el valor relativo de partida siempre será la raiz (&lt;html&gt;), con EM será el elemento padre (en cascada) que tenga definida el tamaño de tipografía pudiéndose obtener valores relativos no esperados
 
 Pero volviendo al inicio de esta entrada, ¿porque estaba usando mal los REMs?. Porque lo usaba para paddings y margins. Si el usuario tiene aplicado aumento de tipofrafía también afecta a estos atributos. Esto quiere decir que aumenta los espaciados, y en el caso de los paddings resta espacio para los contenidos: textos, imágenes, iconos...
 
